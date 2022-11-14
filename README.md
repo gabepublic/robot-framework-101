@@ -195,7 +195,7 @@ Report:  C:\zWSL\projects\robot-framework-101\report.html
 New Browser    headless=${FALSE}
 ```
 
-- Open another terminal
+- Open another terminal, run the test cases with the "headed" browser
 ```
 C:\> cd [projects-dir]/robot-framework-101
 C:\> .venv-win/Scripts/activate
