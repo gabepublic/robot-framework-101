@@ -10,6 +10,7 @@ Documentation
 Library           Process
 Library           String
 Library           lib/Log.py
+Default Tags      headless
 Test Tags         requirement: 42    smoke
 
 *** Keywords ***
@@ -35,6 +36,9 @@ Calculate
 	#Logging message    ${result}
 	[Return]    ${result}
 
+${number1:\d+} ${operator:[+-]} ${number2:\d+} = ${expected:\d+}
+    ${result} =    Evaluate    ${number1} ${operator} ${number2}
+    Should Be Equal As Integers    ${result}    ${expected}
 
 *** Test Cases ***
 Submit to log Hello World
@@ -71,3 +75,7 @@ Setting number variable
     ${number} =    Set Variable    ${-2}
     Logging message    ${number * 10}         # Logs -20
     Logging message    ${number.__abs__()}    # Logs 2
+
+Match numbers and characters from set
+    1 + 2 = 3
+    53 - 11 = 42

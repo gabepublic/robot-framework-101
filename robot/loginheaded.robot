@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    login.resource
+Resource        login.resource
+Default Tags    headed
 
 *** Keywords ***
 Open Browser To Show Login Page
