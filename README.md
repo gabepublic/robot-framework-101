@@ -220,4 +220,14 @@ Report:  C:\zWSL\projects\robot-framework-101\report.html
 (.venv-win) C:\> 
 ```
 
+## Documentation
+
+Source: https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#library-documentation-tool-libdoc
+
+- Generate documentation
+```
+(venv) $ libdoc robot/login.robot login.html
+.../login.html
+(venv) $  
+```
 
