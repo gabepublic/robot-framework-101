@@ -73,9 +73,9 @@ $
 
 - Create python virtual env
 ```
-C:\> cd [projects-dir]/robot-framework-101
+C:\> cd [projects-dir]\robot-framework-101
 C:\> virtualenv .venv-win
-C:\> .venv-win/Scripts/activate
+C:\> .venv-win\Scripts\activate
 (.venv-win) C:\> 
 ```
 
@@ -90,12 +90,12 @@ Robot Framework 6.0 (Python 3.8.2 on linux)
 - To run automated test cases for web UIs, the current go-to library is
   the `Browser-library`. The tests will be run "headless", by default.
 ```
-(venv) $ pip install robotframework-browser
+(.venv-win) C:\> pip install robotframework-browser
 ```
   - After the installation has completed successfully, the library has
     to be **initialized** by running
 ```
-(venv) $ rfbrowser init
+(.venv-win) C:\> $ rfbrowser init
 ```
 
 ## Login robot
@@ -117,18 +117,18 @@ Source:
 
 - Start the http-server web application
 ```
-(venv) $ cd [projects-dir]/robot-framework-101
-$ source .venv/bin/activate
-(venv) $ python server/server.py
+C:\> cd [projects-dir]/robot-framework-101
+C:\> source .venv-win/bin/activate
+(.venv-win) C:\> python server/server.py
 Demo server starting on port 7272.
 CTRL-C to stop 
 ```
 
 - Open another terminal,
 ```
-(venv) $ cd [projects-dir]/robot-framework-101
-$ source .venv/bin/activate
-(venv) $ robot robot/login.robot
+(.venv-win) C:\> cd [projects-dir]/robot-framework-101
+C:\> source .venv-win/bin/activate
+(.venv-win) C:\> robot robot/login.robot
 ==============================================================================
 Login                                                                         
 ==============================================================================
